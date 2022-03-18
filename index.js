@@ -25,6 +25,12 @@ var server = http.createServer((req,res)=>{
         res.write("Hello World ! login");
         res.end();
     }
+    if(req.url=="/Registration")
+    {
+        res.writeHead(200,{"Content-Type":"text/plain"});
+        res.write("Hello World ! Registration");
+        res.end();
+    }
 });
 
 server.listen(PORT,()=>{
