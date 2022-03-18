@@ -28,7 +28,7 @@ var server = http.createServer((req,res)=>{
     if(req.url=="/Registration")
     {
         res.writeHead(200,{"Content-Type":"text/plain"});
-        res.write("Hello World ! login");
+        res.write("Hello World ! Registration");
         res.end();
     }
 });
