@@ -19,6 +19,12 @@ var server = http.createServer((req,res)=>{
         res.write("Hello World ! search");
         res.end();
     }
+    if(req.url=="/login")
+    {
+        res.writeHead(200,{"Content-Type":"text/plain"});
+        res.write("Hello World ! login");
+        res.end();
+    }
 });
 
 server.listen(PORT,()=>{
